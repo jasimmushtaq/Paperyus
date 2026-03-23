@@ -6,7 +6,6 @@ const emptyMod = path.join(__dirname, "lib", "webpack-stubs", "empty-module.js")
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   webpack: (config, { isServer, webpack }) => {
     if (!isServer) {
       config.plugins.push(
